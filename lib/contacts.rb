@@ -20,4 +20,5 @@ def remove_strawberry(contacts)
   end
   contacts.each do |attribute, value|
     puts "#{attribute} #{value}"
+  end
 end
