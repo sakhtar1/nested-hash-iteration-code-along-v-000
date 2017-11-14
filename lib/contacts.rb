@@ -17,10 +17,13 @@ require 'pry'
 def remove_strawberry(contacts)
   contacts.each do |person, data|
     contacts.each do |attribute, value|
-        if attribute == :favorite_ice_cream_flavors
-          :favorite_ice_cream_flavors.delete_if("strawberry")
+        if attribute == :favorite_ice_cream_flavors 
+          value.each do |flavor|
+            if value == "strawberry"
+              puts "#{value}"
+            end
+          end
         end
       end
     end
-    return contacts
 end
