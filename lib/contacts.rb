@@ -17,8 +17,6 @@ require 'pry'
 def remove_strawberry(contacts)
   contacts.each do |person, data|
     contacts.delete_if {|attribute, value| value = "strawberry"}
-    end
+    
   end
-      
-
 end
